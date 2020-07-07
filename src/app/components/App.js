@@ -92,12 +92,6 @@ class App extends Component {
                         {inverterChargerDeviceId => {
                           return (
                             <>
-                              <Header
-                                portalId={portalId}
-                                isConnected={isConnected}
-                                handleRemoteConsoleButtonClicked={this.toggleRemoteConsole}
-                                currentView={this.state.currentView}
-                              />
                               <Main isConnected={isConnected} setView={this.setView}>
                                 {(() => {
                                   switch (this.state.currentView) {

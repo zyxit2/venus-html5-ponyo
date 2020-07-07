@@ -46,9 +46,7 @@ const InverterCharger = ({
               className={classnames("inverter-charger__header", { "inverter-charger__header--column": !shoreInput })}
             >
               <HeaderView
-                icon={require("../../../images/icons/multiplus.svg")}
-                title={customName || `Inverter / Charger: ${productNameShort}`}
-                subTitle={systemStateFormatter(state)}
+                title={customName || `Inverter / Charger`}
                 child
               />
               <InputLimit
